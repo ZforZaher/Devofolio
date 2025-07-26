@@ -1,10 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
 }
+ul{
+    list-style: none;
+    padding: 0;
+}
+.navbar .container a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+.navbar .container .navbar-nav .nav-item a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.navbar .container .navbar-nav .nav-item{
+    position: relative;
+}
+.navbar .container .navbar-nav .nav-item::after{
+    content: '';
+    position: absolute;
+    left: 9px;
+    bottom: 4px;            
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+.navbar .container .navbar-nav .nav-item:hover::after{
+    width: 60%;
+}
+.navbar .container .navbar-nav .nav-item .active{
+    position: relative;
+}
+.navbar .container .navbar-nav .nav-item .active::after{
+    content: '';
+    position: absolute;
+    left: 9px;
+    bottom: 4px;            
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+/* =================================== */
 #header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ;
-    background-image: url(../css/images/hero-bg.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../css/images/hero-bg.jpg) ;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+}
+/* ===================================== */
+#about{
+    background-color: #F5F5F5;
+    font-family: "Open Sans", sans-serif;
+    min-height: 110vh;
+    padding-bottom: 50px;
+}
+#about .container .space{
+    height: 70px;
+}
+#about .container .about-me{
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+#about .container .about-me .pt-1{
+    margin-top: 20px;
+}
+#about .container .about-me .pt-1 img{
+    margin-right: 40px;
+    height: 150px;
+}
+#about .container .about-me .pt-1 ul li{
+    margin-bottom: 18px;
+}
+#about .container .about-me .pt-1 .skills .title-s{
+    font-size: 18px;
+    font-weight: 500;
+}
+#about .container .about-me .pt-1 .skills .progress{
+    height: 12px;
+    border-radius: 0;
+}
+#about .container .about-me .pt-1 .skills .progress-bar{
+    height: 12px;
+}
+#about .container .about-me .pt-2 h5 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#about .container .about-me .pt-2 h5::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 100px;
+    background-color:#0078FF ;
+}
+#about .container .about-me .pt-2 p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #4E4E4E;
+}
+/* ================================ */
+#services{
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+#services .container .title{
+    position: relative;
+}
+#services .container .title h3{
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+#services .container .title p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4E4E4E;
+}
+#services .container .title p::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 530px;
+    height: 5px;
+    width: 40px;
+    background-color:#0078FF ;
+}
+#services .container .services-box{
+    margin-top: 50px;
+}
+#services .container .services-box .serv{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+#services .container .services-box .serv .service-ico .ico-circle i{
+    line-height: 0;
+    font-size: 40px;
+}
+#services .container .services-box .serv:hover .ico-circle{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    border: 10px solid #cde1f8;
+}
+#services .container .services-box .serv .service-ico{
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+#services .container .services-box .serv .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    padding: 50px 50px;
+    border: 10px solid #0078FF;
+}
+#services .container .services-box .serv h2{
+    margin-top: 30px;
+    font-size: 22.4px;
+    font-weight: 500;
+    color: #1e1e1e;
+    margin-top: 40px;
+}
+#services .container .services-box .serv p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4E4E4E;
 }
