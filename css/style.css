@@ -9,6 +9,9 @@ ul{
     list-style: none;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 .navbar .container a{
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
@@ -184,4 +187,106 @@ ul{
     font-size: 16px;
     font-weight: 400;
     color: #4E4E4E;
+}
+
+/* ========================== */
+#counter{
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.6)),url(../css/images/post-3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#counter .container .counter-box .inner .cnt-item{
+    padding: 50px 20px;
+    margin-top: 50%;
+}
+#counter .container .counter-box .inner .cnt-item .counter-ico .ico-circle{
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 20px 25px;
+    border: 10px solid #cde1f8;
+}
+#counter .container .counter-box .inner .cnt-item p{
+    margin-top: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+#counter .container .counter-box .inner .cnt-item span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+/* ========================================= */
+#portfolio{
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+#portfolio .container .title{
+    position: relative;
+}
+#portfolio .container .title h3{
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+#portfolio .container .title p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4E4E4E;
+}
+#portfolio .container .title p::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 530px;
+    height: 5px;
+    width: 40px;
+    background-color:#0078FF ;
+}
+#portfolio .container .port-box{
+    margin-top: 50px;
+}
+#portfolio .container .port-box .inner .port-item{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+#portfolio .container .port-box .inner .port-item .image{
+    overflow: hidden;
+}
+#portfolio .container .port-box .inner .port-item .image img{
+    transition: all 0.3s;
+}
+#portfolio .container .port-box .inner .port-item .image img:hover{
+    transform: scale(1.2);
+}
+#portfolio .container .port-box .inner .port-item .cnt{
+    height: 18vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+#portfolio .container .port-box .inner .port-item .cnt .text{
+    padding-left: 10px;
+}
+#portfolio .container .port-box .inner .port-item .cnt .text h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+#portfolio .container .port-box .inner .port-item .cnt .text p{
+    font-size: 12px;
+    font-weight: 400;
+}
+#portfolio .container .port-box .inner .port-item .cnt span{
+    font-size: 40px;
+    color: #0078FF;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
