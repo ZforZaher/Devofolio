@@ -12,6 +12,28 @@ ul{
 a{
     text-decoration: none;
 }
+#backToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #0078FF;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  font-size: 20px;
+}
+
+#backToTop:hover {
+  background-color: #005fcc;
+}
+
 .navbar .container a{
     font-family: "Open Sans", sans-serif;
     font-weight: bolder;
@@ -26,10 +48,10 @@ a{
 .navbar .container .navbar-nav .nav-item::after{
     content: '';
     position: absolute;
-    left: 9px;
-    bottom: 4px;            
+    left: 0.5625rem;
+    bottom: 0.25rem;            
     width: 0%;
-    height: 2px;
+    height: 0.125rem;
     background-color: white;
     transition: width 0.3s;
 }
@@ -42,12 +64,22 @@ a{
 .navbar .container .navbar-nav .nav-item .active::after{
     content: '';
     position: absolute;
-    left: 9px;
-    bottom: 4px;            
+    left: 0.5625rem;
+    bottom: 0.25rem;            
     width: 60%;
-    height: 2px;
+    height: 0.125rem;
     background-color: white;
     transition: width 0.3s;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 /* =================================== */
 #header{
@@ -61,53 +93,53 @@ a{
     background-color: #F5F5F5;
     font-family: "Open Sans", sans-serif;
     min-height: 110vh;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 #about .container .space{
-    height: 70px;
+    height: 4.375rem;
 }
 #about .container .about-me{
     background-color: white;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
 
 }
 #about .container .about-me .pt-1{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 #about .container .about-me .pt-1 img{
-    margin-right: 40px;
-    height: 150px;
+    margin-right: 2.5rem;
+    height: 9.375rem;
 }
 #about .container .about-me .pt-1 ul li{
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 #about .container .about-me .pt-1 .skills .title-s{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 #about .container .about-me .pt-1 .skills .progress{
-    height: 12px;
+    height: 0.75rem;
     border-radius: 0;
 }
 #about .container .about-me .pt-1 .skills .progress-bar{
-    height: 12px;
+    height: 0.75rem;
 }
 #about .container .about-me .pt-2 h5 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
     position: relative;
 }
 #about .container .about-me .pt-2 h5::after{
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -0.625rem;
     left: 0;
-    height: 2px;
-    width: 100px;
+    height: 0.125rem;
+    width: 6.25rem;
     background-color:#0078FF ;
 }
 #about .container .about-me .pt-2 p{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     color: #4E4E4E;
 }
@@ -120,46 +152,46 @@ a{
     position: relative;
 }
 #services .container .title h3{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 #services .container .title p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #4E4E4E;
 }
 #services .container .title p::after{
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: 530px;
-    height: 5px;
-    width: 40px;
+    bottom: -1.25rem;
+    left: 33.125rem;
+    height: 0.3125rem;
+    width: 2.5rem;
     background-color:#0078FF ;
 }
 #services .container .services-box{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 #services .container .services-box .serv{
     background-color: white;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-    padding: 2.5rem 1.3rem;
-    border-radius: 1rem;
-    margin-bottom: 3rem;
+    box-shadow: 0 0.8125rem 0.5rem -0.625rem rgba(0, 0, 0, 0.1);
+    padding: 40px 20.8px;
+    border-radius: 16px;
+    margin-bottom: 48px;
 }
 #services .container .services-box .serv .service-ico .ico-circle i{
     line-height: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 #services .container .services-box .serv:hover .ico-circle{
     transition: all 500ms ease;
     color: #fff;
     background-color: #0078ff;
-    border: 10px solid #cde1f8;
+    border: 0.625rem solid #cde1f8;
 }
 #services .container .services-box .serv .service-ico{
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     color: #1e1e1e;
 }
 #services .container .services-box .serv .ico-circle {
@@ -167,24 +199,24 @@ a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 100px;
-    font-size: 2rem;
+    height: 6.25rem;
+    width: 6.25rem;
+    font-size: 32px;
     border-radius: 50%;
     line-height: 1.55;
     margin: 0 auto;
-    padding: 50px 50px;
-    border: 10px solid #0078FF;
+    padding: 3.125rem 3.125rem;
+    border: 0.625rem solid #0078FF;
 }
 #services .container .services-box .serv h2{
-    margin-top: 30px;
-    font-size: 22.4px;
+    margin-top: 1.875rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #1e1e1e;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 #services .container .services-box .serv p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #4E4E4E;
 }
@@ -202,28 +234,28 @@ a{
 }
 @media (min-width:300px) and (max-width:768px){
     #counter .container .counter-box .inner .cnt-item{
-        margin: 30px 0;
-        padding-top: 5px;
+        margin: 1.875rem 0;
+        padding-top: 0.3125rem;
     }
 }
 #counter .container .counter-box .inner .cnt-item .counter-ico .ico-circle{
-    height: 50px;
-    width: 50px;
-    font-size: 2rem;
+    height: 3.125rem;
+    width: 3.125rem;
+    font-size: 32px;
     border-radius: 50%;
-    padding: 20px 25px;
-    border: 10px solid #cde1f8;
+    padding: 1.25rem 1.5625rem;
+    border: 0.625rem solid #cde1f8;
 }
 #counter .container .counter-box .inner .cnt-item p{
-    margin-top: 40px;
+    margin-top: 2.5rem;
     font-family: "Open Sans", sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     color: white;
 }
 #counter .container .counter-box .inner .cnt-item span{
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: white;
 }
@@ -236,30 +268,30 @@ a{
     position: relative;
 }
 #portfolio .container .title h3{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 #portfolio .container .title p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #4E4E4E;
 }
 #portfolio .container .title p::after{
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: 530px;
-    height: 5px;
-    width: 40px;
+    bottom: -1.25rem;
+    left: 33.125rem;
+    height: 0.3125rem;
+    width: 2.5rem;
     background-color:#0078FF ;
 }
 #portfolio .container .port-box{
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 #portfolio .container .port-box .inner .port-item{
     background-color: white;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.8125rem 0.5rem -0.625rem rgba(0, 0, 0, 0.1);
 }
 #portfolio .container .port-box .inner .port-item .image{
     overflow: hidden;
@@ -277,21 +309,21 @@ a{
     align-items: end;
 }
 #portfolio .container .port-box .inner .port-item .cnt .text{
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 #portfolio .container .port-box .inner .port-item .cnt .text h5{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 #portfolio .container .port-box .inner .port-item .cnt .text p{
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
 }
 #portfolio .container .port-box .inner .port-item .cnt span{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #0078FF;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    padding-right: 0.625rem;
+    margin-bottom: 0.625rem;
     cursor: pointer;
 }
 /* ============================ */
@@ -307,37 +339,256 @@ a{
     padding-top: 20vh;
 }
 #test .container .feedback img{
-    padding: 20px 0;
+    padding: 1.25rem 0;
     border-radius: 50%;
 }
 #test .container .feedback h3{
-    padding: 10px 0;
-    font-size: 21px;
+    padding: 0.625rem 0;
+    font-size: 1.3125rem;
     font-weight: 600;
     color: white;
 }
 #test .container .feedback p{
-    padding-bottom: 60px;
-    font-size: 20px;
+    padding-bottom: 3.75rem;
+    font-size: 1.25rem;
     font-weight: 300;
     color:white;
 }
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
     border-radius: 50%;
     padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
+    margin-right: 0.1875rem;
+    margin-left: 0.1875rem;
+    text-indent: -62.4375rem;
     cursor: pointer;
     color: white !important;
     background-color: white !important;
     background-clip: padding-box;
     border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-top: 0.625rem solid transparent;
+    border-bottom: 0.625rem solid transparent;
     transition: opacity .6s ease;
+}
+/* ====================== */
+#blog{
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+#blog .container .title{
+    position: relative;
+}
+#blog .container .title h3{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1.25rem;
+}
+#blog .container .title p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4E4E4E;
+}
+#blog .container .title p::after{
+    content: '';
+    position: absolute;
+    bottom: -1.25rem;
+    left: 33.125rem;
+    height: 0.3125rem;
+    width: 2.5rem;
+    background-color:#0078FF ;
+}
+#blog .container .blog-box .inner .blog-item {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+}
+#blog .container .blog-box .inner .blog-item .card-category-box {
+  position: absolute;
+  text-align: center;
+  top: -15px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+#blog .container .blog-box .inner .blog-item .card-category-box .card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+#blog .container .blog-box .inner .blog-item .card-category-box .card-category .category {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+#blog .container .blog-box .inner .blog-item .blog-cnt{
+    background-color: white;
+    padding: 30px 10px;
+        position: relative;
+}
+#blog .container .blog-box .inner .blog-item .blog-cnt a{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: color 300ms;
+} 
+#blog .container .blog-box .inner .blog-item .blog-cnt a:hover{
+    color: #0078FF;
+}
+#blog .container .blog-box .inner .blog-item .blog-cnt p{
+    color: #4E4E4E;
+    font-size: 15px;
+    font-weight: 400;
+} 
+#blog .container .blog-box .inner .blog-item .blog-footer{
+    background-color:#F8F8F8 ;
+    border-top: 1px solid #eee;
+}
+#blog .container .blog-box .inner .blog-item .blog-footer img{
+    width: 20%;
+    border-radius: 50%;
+}
+#blog .container .blog-box .inner .blog-item .blog-footer span{
+    font-size: 1rem;
+    transition: color 300ms;
+    cursor: pointer;
+}
+#blog .container .blog-box .inner .blog-item .blog-footer span:hover{
+    color: #0078FF;
+}
+#blog .container .blog-box .inner .blog-item .one{
+    width: 50%;
+}
+/* ========================= */
+#contact {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0, 120, 255, 0.6), rgba(0, 120, 255, 0.6)), url(../css/images/overlay-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+#contact .container .contact-card{
+    background-color: white;
+}
+#contact .container .contact-card .send h3,
+#contact .container .contact-card .get h3{
+    font-weight: 500;
+    font-size: 32px;
+    position: relative;
+    text-align: left !important;
+}
+#contact .container .contact-card .send h3::after,
+#contact .container .contact-card .get h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #0078FF;
+    height: 4px;
+    width: 20%;
+}
+#contact .container .contact-card .send form{
+    margin-top: 25px;
+}
+#contact .container .contact-card .send form input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid #eee;
+}
+#contact .container .contact-card .send form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 140px;
+    padding-left: 10px;
+    font-size: 14px;
+    resize: vertical;
+    border: 1px solid #eee;
+}
+#contact .container .contact-card .send button{
+    margin-top: 1rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #0078FF;
+    border: 0;
+}
+#contact .container .contact-card .get p{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+#contact .container .contact-card .get ul li span{
+    color: #0078FF;
+    margin-right: 5px;
+}
+#contact .container .contact-card .get ul li{
+    font-weight: 400;
+    margin-right: 10px;
+}
+#contact .container .contact-card .get .socials ul{
+    display:flex;
+}
+#contact .container .contact-card .get .socials ul li .ico-circle i{
+    line-height: 0;
+    font-size: 1.2rem;
+}
+#contact .container .contact-card .get .socials ul li:hover .ico-circle{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    border: 5px solid #cde1f8;
+}
+#contact .container .contact-card .get .socials ul li .ico-circle{
+    margin-bottom: 16px;
+    color: #1e1e1e;
+}
+#contact .container .contact-card .get .socials ul li .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: 5px solid #0078FF;
+}
+/* ============================= */
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
+
+footer .copyright {
+  margin-bottom: 0.3rem;
+}
+
+footer .credits {
+  margin-bottom: 0;
+}
+
+footer .credits a {
+  color: #fff;
 }
