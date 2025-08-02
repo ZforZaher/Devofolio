@@ -88,6 +88,12 @@ a{
     background-position: center center;
     background-attachment: fixed;
 }
+#header .container-fluid .title h1{
+    font-size: 4.5rem;
+}
+#header .container-fluid .title span{
+    font-size: 2.5rem;
+}
 /* ===================================== */
 #about{
     background-color: #F5F5F5;
@@ -106,7 +112,13 @@ a{
 #about .container .about-me .pt-1{
     margin-top: 1.25rem;
 }
-@media (min-width:300px) and (max-width:768px){
+@media (min-width:220px) and (max-width:768px){
+    #header .container-fluid .title h1{
+    font-size: 50px;
+    }
+    #header .container-fluid .title span{
+        font-size: 20px;
+    }
     #about .container .about-me .pt-1 .data{
         display: flex;
         flex-direction: column;
@@ -118,6 +130,10 @@ a{
         margin-top: 20px;
         margin: 20px auto 0 auto;
     }
+    #about .container .about-me .pt-1 .data ul li strong{
+        display: block;
+    }
+    
 }
 #about .container .about-me .pt-1 img{
     margin-right: 2.5rem;
@@ -161,9 +177,6 @@ a{
     background-color: #F5F5F5;
     min-height: 100vh;
 }
-#services .container .title{
-    position: relative;
-}
 #services .container .title h3{
     font-size: 3rem;
     font-weight: 700;
@@ -173,12 +186,13 @@ a{
     font-size: 1rem;
     font-weight: 400;
     color: #4E4E4E;
+    position: relative;
 }
 #services .container .title p::after{
     content: '';
     position: absolute;
     bottom: -1.25rem;
-    left: 33.125rem;
+    left: 48%;
     height: 0.3125rem;
     width: 2.5rem;
     background-color:#0078FF ;
@@ -245,7 +259,7 @@ a{
 #counter .container .counter-box .inner .cnt-item{
     margin-top: 50%;
 }
-@media (min-width:300px) and (max-width:768px){
+@media (min-width:220px) and (max-width:768px){
     #counter .container .counter-box .inner .cnt-item{
         margin: 1.875rem 0;
         padding-top: 0.3125rem;
@@ -277,11 +291,8 @@ a{
     background-color: #F5F5F5;
     min-height: 100vh;
 }
-#portfolio .container .title{
-    position: relative;
-}
 #portfolio .container .title h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     padding-top: 1.25rem;
 }
@@ -289,12 +300,13 @@ a{
     font-size: 1rem;
     font-weight: 400;
     color: #4E4E4E;
+    position: relative;
 }
 #portfolio .container .title p::after{
     content: '';
     position: absolute;
     bottom: -1.25rem;
-    left: 33.125rem;
+    left: 48%;
     height: 0.3125rem;
     width: 2.5rem;
     background-color:#0078FF ;
@@ -391,9 +403,6 @@ a{
     background-color: #F5F5F5;
     min-height: 100vh;
 }
-#blog .container .title{
-    position: relative;
-}
 #blog .container .title h3{
     font-size: 3rem;
     font-weight: 700;
@@ -403,12 +412,13 @@ a{
     font-size: 1rem;
     font-weight: 400;
     color: #4E4E4E;
+    position: relative;
 }
 #blog .container .title p::after{
     content: '';
     position: absolute;
     bottom: -1.25rem;
-    left: 33.125rem;
+    left: 48%;
     height: 0.3125rem;
     width: 2.5rem;
     background-color:#0078FF ;
@@ -555,7 +565,7 @@ a{
     font-weight: 400;
     margin-right: 10px;
 }
-#contact .container .contact-card .get .socials ul{
+    .get .socials ul{
     display:flex;
 }
 #contact .container .contact-card .get .socials ul li .ico-circle i{
@@ -585,6 +595,11 @@ a{
     margin: 0 auto;
     padding: 10px 10px;
     border: 5px solid #0078FF;
+}
+@media (min-width:220px) and (max-width:768px){
+    #contact .container .contact-card{
+        padding: 0 5px !important;
+    }
 }
 /* ============================= */
 footer {
