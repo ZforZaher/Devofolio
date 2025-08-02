@@ -106,6 +106,19 @@ a{
 #about .container .about-me .pt-1{
     margin-top: 1.25rem;
 }
+@media (min-width:300px) and (max-width:768px){
+    #about .container .about-me .pt-1 .data{
+        display: flex;
+        flex-direction: column;
+    }
+    #about .container .about-me .pt-1 .data img{
+        margin: 0 auto;
+    }
+    #about .container .about-me .pt-1 .data ul{
+        margin-top: 20px;
+        margin: 20px auto 0 auto;
+    }
+}
 #about .container .about-me .pt-1 img{
     margin-right: 2.5rem;
     height: 9.375rem;
